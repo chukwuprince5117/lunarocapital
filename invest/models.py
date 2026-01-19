@@ -127,9 +127,10 @@ class InvestmentTier(models.Model):
     """Investment tiers/packages"""
     TIER_CHOICES = [
         ('BASIC', 'Basic'),
-        ('STANDARD', 'Standard'),
         ('PROFESSIONAL', 'Professional'),
-        ('ADVANCED', 'Advanced'),
+        ('BUSINESS', 'Business'),
+        ('COMPANY', 'Company'),
+        ('TRIPLE_STAKE', 'Triple Stake Plan'),
     ]
     
     name = models.CharField(max_length=20, choices=TIER_CHOICES, unique=True)
