@@ -239,9 +239,10 @@ def deposit(request):
             # Get investment tier by name
             tier_mapping = {
                 'basic': 'BASIC',
-                'standard': 'STANDARD', 
                 'professional': 'PROFESSIONAL',
-                'advanced': 'ADVANCED'
+                'business': 'BUSINESS',
+                'company': 'COMPANY',
+                'triple_stake': 'TRIPLE_STAKE'
             }
             tier_name = tier_mapping.get(selected_tier.lower())
             
